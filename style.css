@@ -1,0 +1,421 @@
+* {padding:0; margin:0; border:none}
+*,*::before,*::after {box-sizing:border-box}
+a,a:link,a:visited {text-decoration:none}
+a:hover {text-decoration:none}
+aside,nav,footer,header,section,main {display:block}
+h1,h2,h3,h4,h5,h6,p {font-size:inherit; font-weight:inherit}
+ul,ul li {list-style:none}
+img {vertical-align:top}
+img,svg {max-width:100%; height:auto}
+address {font-style:normal}
+input,textarea,button,select {font-family:inherit; font-size:inherit; color:inherit; background-color:transparent}
+input::-ms-clear {display:none}
+button,input[type="submit"] {display:inline-block; box-shadow:none; background-color:transparent; background:none; cursor:pointer}
+input:focus,input:active,button:focus,button:active {outline:none}
+button::-moz-focus-inner {padding:0; border:0}
+label {cursor:pointer}
+legend {display:block}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Regular.woff2') format('woff2'), /* Для современных браузеров */
+         url('./fonts/Gilroy-Regular.woff') format('woff'); /* Для старых браузеров */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GilroyExBold';
+    src: url('./fonts/Gilroy-Extrabold.woff2') format('woff2'), /* Для современных браузеров */
+         url('./fonts/Gilroy-Extrabold.woff') format('woff'); /* Для старых браузеров */
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%; 
+}
+body *{
+    font-family: 'Gilroy', sans-serif;
+}
+body h1, h2, h3, h1 *, h2 *, h3 *{
+    font-family: 'GilroyExBold', sans-serif;
+}
+body a, body button{
+    transition: 0.3s ease;
+}
+body a:hover, body button:hover{
+    opacity: 0.6;
+}
+
+.flex-al-center{
+    display: flex;
+    align-items: center;
+}
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1680px;
+    padding: 0 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    padding: 20px 16px;
+    flex-wrap: wrap;
+    gap: 20px;
+    z-index: 3;
+}
+.header .header_side a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2.4rem;
+    color: white;
+}
+.header .header_side.flex{
+    display: flex;
+    gap: 20px 82px;
+    flex-wrap: wrap;
+}
+.header .header_side .header_side-contacts, .header .header_side .header_side-socials{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+
+
+
+.main{
+    padding-top: 100px;
+    background: url(./images/main-bg.png) no-repeat center top / cover;
+    width: 100%;
+    height: 1206px;
+    position: relative;
+}
+.main .container-ab::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    border-radius: 343px;
+    background: rgb(236, 19, 84);
+    width: 1666.82px;
+    height: 1223.65px;
+    transform: rotate(-21.22deg);
+    right: -484px;
+    bottom: -300px;
+}
+.main .container{
+    display: flex;
+    z-index: 2;
+}
+.main .container-ab{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    left: 5%;
+    z-index: 1;
+}
+.main h1{
+    font-size: 14.5rem;
+    font-weight: 800;
+    color: white;
+    max-width: 1007px;
+    margin-top: 240px;
+    line-height: 136px;
+}
+.main_image{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.main_image .person-name{
+    position: absolute;
+    left: -40%;
+    bottom: 136px;
+}
+.main_image .person-name h5{
+    font-size: 3.2rem;
+    color: white;
+    font-weight: 700;
+}
+.main_image .person-name p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+}
+.main_image .person-name svg{
+    position: absolute;
+    left: 100%;
+    bottom: 50%;
+}
+
+
+.direction{
+    margin-top: 184px;
+    position: relative;
+    display: flex;
+    gap: 200px;
+    align-items: center;
+}
+.direction .direction_block h4{
+    font-size: 6.4rem;
+    font-weight: 800;
+    max-width: 653px;
+    text-align: center;
+    color: rgb(49, 49, 49);
+    font-family: 'GilroyExBold', sans-serif;
+}
+.direction .direction_block h4 *{
+    font-family: 'GilroyExBold', sans-serif;
+}
+.direction .direction_block h4 span.border-style1{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+}
+.direction .direction_block h4 span.border-style1::after {
+    content: url(/images/border-style1.svg);
+    position: absolute;
+    z-index: -1;
+    left: -4%;
+    top: -47%;
+    width: 107%;
+    height: 100%;
+}
+.direction .direction_block .direction_block-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    max-width: 547px;
+}
+.direction .direction_block .direction_block-list li{
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    text-shadow: 0px 0px black;
+}
+.direction .direction_block .direction_block-list li svg{
+    min-width: 24px;
+}
+
+
+
+.about-us{
+    margin-top: 173.52px;
+    position: relative;
+}
+.about-us .about-us_vec-top, .about-us .about-us_vec-bottom{
+    position: absolute;
+}
+.about-us .about-us_vec-top{
+    top: 413px;
+    left: 15%;
+}
+.about-us .about-us_vec-bottom{
+    bottom: -760px;
+    right: 200px;
+}
+.about-us .title{
+    font-size: 12.8rem;
+    color: rgb(61, 61, 61);
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+}
+.about-us .title span{
+    color: rgb(236, 19, 84);
+}
+.about-us .description{
+    color: rgb(61, 61, 61);
+    font-size: 5rem;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    font-family: 'GilroyExBold', sans-serif;
+}
+.about-us_contents{
+    display: flex;
+    flex-direction: column;
+    margin-top: 157px;
+    position: relative;
+    z-index: 1;
+    gap: 110px;
+}
+.about-us_contents .about-us_contents-block{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.about-us_contents .about-us_contents-block h3{
+    font-size: 9.6rem;
+    font-weight: 900;
+    color: rgb(236, 19, 84);
+}
+.about-us_contents .about-us_contents-block p{
+    font-size: 6.5rem;
+    color: rgb(49, 49, 49);
+    font-weight: 700;
+}
+.about-us_contents .about-us_contents-block img{
+    width: 100%;
+    min-width: 280px;
+}
+.about-us_contents-block-text p span{
+    color: rgb(236, 19, 84);
+    position: relative;
+    display: inline-block;
+    text-wrap: nowrap;
+}
+.about-us_contents-block-text p span.border-style2::after {
+    content: url(/images/border-style2.svg);
+    position: absolute;
+    z-index: -1;
+    left: -3%;
+    top: -3%;
+    width: 107%;
+    height: 100%;
+}
+
+.footer{
+    width: 100%;
+    position: relative;
+    padding-top: 111px;
+    margin-top: 90px;
+    background: url(./images/footer-bg.svg) no-repeat top;
+    z-index: 1;
+}
+.footer_content{
+    position: relative;
+}
+.footer_content-top{
+    text-align: center;
+}
+.footer_content-top p{
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+}
+.footer_content-top h2{
+    font-size: 7.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+}
+.footer_content-top h2 span{
+    color: rgb(236, 19, 84);
+}
+.footer_content-top form{
+    margin-top: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: 100%;
+    max-width: 338px;
+    box-sizing: border-box;
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+    padding: 19px 17px;
+    color: rgb(113, 113, 113);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.footer_content-top form button{
+    border-radius: 50%;
+    background: rgb(236, 19, 84);
+    width: 71px;
+    height: 71px;
+}
+
+
+.footer_content-bottom{
+    display: flex;
+    gap: 80px;
+    margin-top: 179.5px;
+    flex-wrap: wrap;
+}
+.footer_content-bottom *{
+    color: white;
+}
+.footer_content-bottom .footer_content-bottom-block{
+    display: flex;
+    flex-direction: column;
+}
+.footer_content-bottom .footer_content-bottom-block svg{
+    width: 24px;
+}
+.footer_content-bottom h6{
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.footer_content-bottom .phones{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px
+}
+.footer_content-bottom a{
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 314px;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.footer_copyright{
+    margin-top: 75px;
+    background: rgb(19, 19, 19);
+    padding: 27px 0;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 500;
+}
+.footer_copyright .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer_copyright .container a{
+    color: white;
+    border-bottom: 2px solid;
+}
+
+
+
+
+

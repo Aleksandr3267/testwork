@@ -1,0 +1,212 @@
+
+@media(max-width:1600px){
+    .main .container-ab::after{
+        width: 1466.82px;
+        height: 1023.65px;
+        border-radius: 203px;
+    }
+    .main h1{
+        font-size: 12rem;
+        max-width: 700px;
+    }
+    .main_image img{
+        max-width: 750px;
+        width: 100%;
+    }
+
+    .about-us .title{
+        font-size: 10rem;
+    }
+    .about-us .description{
+        font-size: 4rem;
+    }
+
+    .about-us_contents .about-us_contents-block h3{
+        font-size: 7rem;
+    }
+    .about-us_contents .about-us_contents-block p{
+        font-size: 4.5rem;
+    }
+    .about-us_contents .about-us_contents-block img{
+        max-width: 700px;
+    }
+
+    .footer_content-top p{
+        font-size: 3.5rem;
+    }
+    .footer_content-top h2{
+        font-size: 6.5rem;
+    }
+}
+@media(max-width:1200px){
+    .main h1{
+        font-size: 10rem;
+        line-height: 106px;
+    }
+    .main_image .person-name{
+        left: 0;
+    }
+
+    .direction{
+        flex-wrap: wrap;
+    }
+    .direction .direction_block .direction_block-list li{
+        color:  rgb(61, 61, 61);
+    }
+    .direction .direction_block .direction_block-list li svg path{
+        fill:  rgb(61, 61, 61);
+    }
+
+    .about-us .title{
+        font-size: 8rem;
+    }
+}
+
+
+@media(max-width:1000px){
+    .main{
+        height: 1100px;
+    }
+    .main::after{
+        width: 1366.82px;
+        height: 923.65px;
+        border-radius: 203px;
+    }
+    .main h1{
+        font-size: 7rem;
+        line-height: 76px;
+        max-width: 500px;
+    }
+
+    .direction .direction_block h4{
+        font-size: 5.4rem;
+    }
+
+    .about-us .title{
+        font-size: 7rem;
+    }
+    .about-us .description{
+        font-size: 3rem;
+    }
+
+    .about-us_contents .about-us_contents-block h3{
+        font-size: 6rem;
+    }
+    .about-us_contents .about-us_contents-block p{
+        font-size: 4rem;
+    }
+    .about-us_contents .about-us_contents-block img{
+        max-width: 600px;
+    }
+
+    .footer_content-top p{
+        font-size: 3rem;
+    }
+    .footer_content-top h2{
+        font-size: 6.5rem;
+    }
+}
+
+
+@media(max-width:900px){
+    .about-us_contents .about-us_contents-block{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about-us_contents .about-us_contents-block:nth-child(2n){
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media(max-width:768px){
+    .footer_content-top form{
+        flex-direction: column;
+    }
+}
+@media(max-width:700px){
+    .main h1{
+        font-size: 7rem;
+        line-height: 76px;
+    }
+
+    .direction .direction_block h4{
+        font-size: 5.4rem;
+    }
+
+    .about-us .title{
+        font-size: 5.8rem;
+    }
+    .about-us .description{
+        font-size: 3rem;
+    }
+
+    .about-us_contents .about-us_contents-block h3{
+        font-size: 5rem;
+    }
+    .about-us_contents .about-us_contents-block p{
+        font-size: 3.5rem;
+    }
+    .about-us_contents .about-us_contents-block img{
+        max-width: 600px;
+    }
+
+    .footer_content-top p{
+        font-size: 2rem;
+    }
+    .footer_content-top h2{
+        font-size: 4.5rem;
+    }
+}
+
+@media(max-width:560px){
+    .main .container-ab{
+        left: 0;
+    }
+    .main_image .person-name{
+        left: 0;
+        bottom: -70px;
+        right: 0;
+        text-align: center;
+    }
+}
+@media(max-width:500px){
+    .main{
+        height: 1000px;
+    }
+    .main h1{
+        font-size: 4.5rem;
+        line-height: 46px;
+    }
+
+    .direction .direction_block h4{
+        font-size: 3.5rem;
+    }
+    .direction .direction_block .direction_block-list li{
+        font-size: 2rem;
+    }
+
+    .about-us .title{
+        font-size: 4.5rem;
+    }
+    .about-us .description{
+        font-size: 2.5rem;
+    }
+
+    .about-us_contents .about-us_contents-block h3{
+        font-size: 3.5rem;
+    }
+    .about-us_contents .about-us_contents-block p{
+        font-size: 2.5rem;
+    }
+    .about-us_contents .about-us_contents-block img{
+        max-width: 600px;
+    }
+
+    .footer_content-top p{
+        font-size: 1.2rem;
+    }
+    .footer_content-top h2{
+        font-size: 3rem;
+    }
+}
